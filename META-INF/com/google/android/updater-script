@@ -1,0 +1,17 @@
+ui_print("==================================================");      
+ui_print("Re-partitioning the boot and vendor_boot sections ");
+ui_print("by isus203 ");
+ui_print("==================================================");      
+package_extract_file("re-partition.sh", "/tmp/re-partition.sh");
+set_perm(0, 0, 0777, "/tmp/re-partition.sh");
+package_extract_file("sgdisk", "/tmp/sgdisk");
+set_perm(0, 0, 0777, "/tmp/sgdisk");
+package_extract_file("boot.img", "/tmp/boot.img");
+set_perm(0, 0, 0777, "/tmp/boot.img");
+ui_print("running the script");
+run_program("/tmp/re-partition.sh");
+ui_print("deleting files");
+delete("/tmp/re-partition.sh");
+delete("/tmp/sgdisk");
+delete("/tmp/boot.img");
+ui_print("Re-partition completed successfully");
