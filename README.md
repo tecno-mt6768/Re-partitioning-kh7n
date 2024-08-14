@@ -1,4 +1,5 @@
-INCREASE BOOT SIZE TO 96MB
+# INCREASE BOOT SIZE TO 96MB
+
 Warning! All actions are performed at your own risk. I am not responsible for possible consequences with the device (kerpich).
 
 Instructions:
