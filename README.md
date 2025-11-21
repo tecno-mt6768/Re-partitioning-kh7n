@@ -79,3 +79,6 @@ adb logcat > log.txt
 
 Credits
  * Thanks to alekseystarikov for testing the archive.
+
+
+How to port to your device https://github.com/tecno-mt6768/Universal-Boot-Repartitioner-GPT-Backup
